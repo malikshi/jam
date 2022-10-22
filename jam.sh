@@ -53,7 +53,7 @@ case $monthValue in
 esac
 ID=$(grep '^ID' /etc/os-release)
 if [[ "$ID" = "openwrt" ]]; then
-date --utc --set ${yearValue}-${monthValue}-${dateValue} ${timeValue}
+    date --utc --set ${yearValue}-${monthValue}-${dateValue} ${timeValue}
 else
-date --utc --set ${yearValue}-${monthValue}-${dateValue}T${timeValue}Z
+    date --utc --set ${yearValue}-${monthValue}-${dateValue}T${timeValue}Z
 fi
