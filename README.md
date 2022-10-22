@@ -26,10 +26,14 @@ Silahkan rubah `api.myxl.xlaxiata.co.id` dengan bug/websites yang dapat anda aks
 ```sh
 crontab -e
 ```
+Copy & Paste
 
 ```sh
 @reboot root /usr/bin/jam
 ```
+
+Save
+
 
 # Credits
 
