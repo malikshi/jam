@@ -1,6 +1,6 @@
 #!/bin/bash
 # Automatically Updates System Time According to the NIST Atomic Clock in a Linux Environment
-# silahkan rubah api.myxl.xlaxiata.co.id dengan bug/websites yang dapat anda akses dengan gratis
+# Silahkan rubah api.myxl.xlaxiata.co.id dengan bug/websites yang dapat anda akses dengan gratis
 nistTime=$(curl -I --insecure 'api.myxl.xlaxiata.co.id' | grep "ate:")
 echo $nistTime
 dateString=$(echo $nistTime | cut -d' ' -f2-7)
