@@ -51,4 +51,4 @@ case $monthValue in
     *)
         continue
 esac
-date --set ${yearValue}-${monthValue}-${dateValue}T${timeValue}Z
+date --utc --set ${yearValue}-${monthValue}-${dateValue}T${timeValue}Z
